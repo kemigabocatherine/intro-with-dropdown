@@ -8,7 +8,7 @@
   
   <title>Intro section with dropdown navigation</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dist/css/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -18,7 +18,24 @@
 </head>
 <body>
   <nav>
-    <div>
+    <!-- mobile-menu -->
+    <div class="sidebar">
+      <div>
+        <ul>
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div>
+        <button> Login</button>
+        <button>Register</button>
+      </div>
+    </div>
+  
+    <!-- desktop-menu -->
+    <div class="items">
       <img src="./images/logo.svg" alt="logo">
       <ul>
         <li>Features</li>
