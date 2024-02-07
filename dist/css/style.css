@@ -31,7 +31,7 @@ nav div, nav ul {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .sidebar div, .sidebar ul {
