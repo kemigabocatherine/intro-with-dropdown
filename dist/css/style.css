@@ -37,4 +37,20 @@ nav div, nav ul {
 .sidebar div, .sidebar ul {
   display: flex;
   flex-direction: column;
+}
+
+.items ul,
+.join {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .items ul,
+  .join {
+    display: flex;
+  }
+  .sidebar,
+  #menu-icon {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
