@@ -44,19 +44,22 @@ nav {
 }
 
 .items ul,
-.join {
+.join,
+.desktop-image {
   display: none;
 }
 
 
 @media (min-width: 769px) {
   .items ul,
-  .join {
+  .join,
+  .desktop-image {
     display: flex;
   }
 
   .sidebar, 
-  #menu-icon {
+  #menu-icon,
+  .mobile-image {
     display: none;
   }
 }
