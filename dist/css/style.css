@@ -46,7 +46,7 @@ nav div, nav ul {
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 @media (min-width: 769px) {
