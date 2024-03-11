@@ -7,7 +7,6 @@
 body {
   min-height: 100vh;
   font-family: "Epilogue", sans-serif;
-  background-color: aquamarine;
 }
 
 nav {
@@ -38,6 +37,10 @@ nav div, nav ul {
   display: flex;
   flex-direction: column;
 }
+.sidebar .feature-list,
+.sidebar .company-list {
+  display: none;
+}
 
 .items ul,
 .join,
@@ -45,15 +48,19 @@ nav div, nav ul {
   display: none;
 }
 
-.show {
-  display: flex;
-}
-
 @media (min-width: 769px) {
   .items ul,
   .join,
   .desktop-image {
     display: flex;
+  }
+  .items ul .features,
+  .items ul .company,
+  .join .features,
+  .join .company,
+  .desktop-image .features,
+  .desktop-image .company {
+    display: none;
   }
   .sidebar,
   #menu-icon,

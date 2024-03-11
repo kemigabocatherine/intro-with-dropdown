@@ -10,7 +10,6 @@ $font-family: 'Epilogue', sans-serif;
 body {
   min-height: 100vh;
   font-family: $font-family;
-  background-color: aquamarine;
 }
 
 nav {
@@ -41,6 +40,11 @@ nav {
     display: flex;
     flex-direction: column;
   }
+
+  .feature-list,
+  .company-list {
+    display: none;
+  }
 }
 
 .items ul,
@@ -49,16 +53,16 @@ nav {
   display: none;
 }
 
-.show {
-  display: flex;
-}
-
-
 @media (min-width: 769px) {
   .items ul,
   .join,
   .desktop-image {
     display: flex;
+
+    .features,
+    .company {
+      display: none;
+    }
   }
 
   .sidebar, 
