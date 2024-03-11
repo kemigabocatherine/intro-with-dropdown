@@ -15,7 +15,8 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-nav div, nav ul {
+nav div,
+nav ul {
   display: flex;
 }
 
@@ -33,7 +34,8 @@ nav div, nav ul {
   display: none;
   flex-direction: column;
 }
-.sidebar div, .sidebar ul {
+.sidebar div,
+.sidebar ul {
   display: flex;
   flex-direction: column;
 }
@@ -49,17 +51,17 @@ nav div, nav ul {
 }
 
 @media (min-width: 769px) {
-  .items ul,
   .join,
-  .desktop-image {
+  .desktop-image,
+  .items ul {
     display: flex;
   }
-  .items ul .features,
-  .items ul .company,
   .join .features,
   .join .company,
   .desktop-image .features,
-  .desktop-image .company {
+  .desktop-image .company,
+  .items ul .features,
+  .items ul .company {
     display: none;
   }
   .sidebar,

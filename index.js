@@ -23,11 +23,11 @@ function hideMenu() {
 }
 
 function showFeatureList() {
-  if(isShow){
+  if (isShow) {
     featureList.style.display = 'none';
     arrowDown.style.transform = 'rotate(0deg)';
     isShow = false;
-  }else {
+  } else {
     featureList.style.display = 'block';
     arrowDown.style.transform = 'rotate(180deg)';
     isShow = true;
@@ -35,11 +35,11 @@ function showFeatureList() {
 }
 
 function showFeature() {
-  if(isShow){
+  if (isShow) {
     feature.style.display = 'none';
     arrowDownD.style.transform = 'rotate(0deg)';
     isShow = false;
-  }else {
+  } else {
     feature.style.display = 'block';
     arrowDownD.style.transform = 'rotate(180deg)';
     isShow = true;
@@ -47,11 +47,11 @@ function showFeature() {
 }
 
 function showCompanyList() {
-  if(isShow){
+  if (isShow) {
     companyList.style.display = 'none';
     arrowDown1.style.transform = 'rotate(0deg)';
     isShow = false;
-  }else {
+  } else {
     companyList.style.display = 'block';
     arrowDown1.style.transform = 'rotate(180deg)';
     isShow = true;
@@ -59,11 +59,11 @@ function showCompanyList() {
 }
 
 function showCompany() {
-  if(isShow){
+  if (isShow) {
     company.style.display = 'none';
     arrowDownD1.style.transform = 'rotate(0deg)';
     isShow = false;
-  }else {
+  } else {
     company.style.display = 'block';
     arrowDownD1.style.transform = 'rotate(180deg)';
     isShow = true;
