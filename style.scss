@@ -18,7 +18,8 @@ nav {
   display: flex;
   justify-content: space-between;
 
-  div, ul {
+  div,
+  ul {
     display: flex;
   }
 }
@@ -36,7 +37,8 @@ nav {
   display: none;
   flex-direction: column;
 
-  div, ul {
+  div,
+  ul {
     display: flex;
     flex-direction: column;
   }
@@ -54,9 +56,9 @@ nav {
 }
 
 @media (min-width: 769px) {
-  .items ul,
   .join,
-  .desktop-image {
+  .desktop-image,
+  .items ul {
     display: flex;
 
     .features,
@@ -65,7 +67,7 @@ nav {
     }
   }
 
-  .sidebar, 
+  .sidebar,
   #menu-icon,
   .mobile-image {
     display: none;
