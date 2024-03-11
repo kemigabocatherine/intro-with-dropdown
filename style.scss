@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,700&family=Outfit:wght@400;700&display=swap');
+
+$font-family: 'Epilogue', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-family;
+}
+
+nav {
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+
+  div,
+  ul {
+    display: flex;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+  width: 60%;
+  background-color: bisque;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+
+  div,
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-list,
+  .company-list {
+    display: none;
+  }
+}
+
+.items ul,
+.join,
+.desktop-image {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .join,
+  .desktop-image,
+  .items ul {
+    display: flex;
+
+    .features,
+    .company {
+      display: none;
+    }
+  }
+
+  .sidebar,
+  #menu-icon,
+  .mobile-image {
+    display: none;
+  }
+}

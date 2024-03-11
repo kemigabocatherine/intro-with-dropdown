@@ -6,7 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <title>Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="dist/css/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,25 +17,93 @@
   </style>
 </head>
 <body>
+  <nav>
+    <!-- mobile-menu -->
+    <div class="sidebar">
+      <img src="images/icon-close-menu.svg" alt="close-icon" id="close-icon">
+      <div>
+        <ul>
+          <li>Features
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrowdown">
+          </li>
+          <ul class="feature-list">
+            <li><img src="images/icon-todo.svg" alt="to-do">Todo List</li>
+            <li><img src="images/icon-calendar.svg" alt="calendar">Calendar</li>
+            <li><img src="images/icon-reminders.svg" alt="reminders">Reminders</li>
+            <li><img src="images/icon-planning.svg" alt="planning">Planning</li>
+          </ul>
+          
+          <li>Company
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrowdown1">
+          </li>
+          <ul class="company-list">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
 
-  Features
-  Company
-  Careers
-  About
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div>
+        <button> Login</button>
+        <button>Register</button>
+      </div>
+    </div>
+  
+    <!-- desktop-menu -->
+    <div class="items">
+      <img src="./images/logo.svg" alt="logo">
+      <ul>
+        <li>Features 
+          <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrowdown-d">
+        </li>
+        <ul class="features">
+          <li><img src="images/icon-todo.svg" alt="to-do">Todo List</li>
+          <li><img src="images/icon-calendar.svg" alt="calendar">Calendar</li>
+          <li><img src="images/icon-reminders.svg" alt="reminders">Reminders</li>
+          <li><img src="images/icon-planning.svg" alt="planning">Planning</li>
+        </ul>
 
-  Login
-  Register
+        <li>Company 
+          <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrowdown-d1">
+        </li>
+        <ul class="company">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
 
-  Make remote work
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="join">
+      <button> Login</button>
+      <button>Register</button>
+    </div>
+    <img src="images/icon-menu.svg" alt="menu-icon" id="menu-icon">
+  </nav>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <main>
+    <img src="images/image-hero-mobile.png" alt="mobile-image" class="mobile-image">
+    <h1>Make remote work</h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+    <button>Learn more</button>
+    <ul>
+      <li><img src="images/client-databiz.svg" alt=""></li>
+      <li><img src="images/client-audiophile.svg" alt=""></li>
+      <li><img src="images/client-meet.svg" alt=""></li>
+      <li><img src="images/client-maker.svg" alt=""></li>
+    </ul>
+    <div><img src="images/image-hero-desktop.png" alt="desktop-image" class="desktop-image"></div>
+  </main>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
