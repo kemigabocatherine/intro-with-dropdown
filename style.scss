@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,700&family=Outfit:wght@400;700&display=swap');
 
 $font-family: 'Epilogue', sans-serif;
+$font-size: 18px;
+$Almost-White: #fafafa;
+$Medium-Gray: #696969;
+$Almost-Black: #141414;
 
 * {
   margin: 0;
@@ -10,18 +14,29 @@ $font-family: 'Epilogue', sans-serif;
 body {
   min-height: 100vh;
   font-family: $font-family;
+  overflow: hidden;
+  background-color: $Almost-White;
 }
 
 nav {
   background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem;
 
   div,
   ul {
     display: flex;
   }
+}
+
+#menu-icon {
+  width: 44px;
+  height: 22px;
+}
+
+#menu-icon:hover {
+  cursor: pointer;
 }
 
 .sidebar {
@@ -55,7 +70,76 @@ nav {
   display: none;
 }
 
-@media (min-width: 769px) {
+.mobile-image {
+  padding: 1.3rem 0 2.5rem 0;
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.topic {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h5 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      width: 100%;
+      color: $Almost-Black;
+    }
+  }
+
+  div.paragraph {
+    display: flex;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0 4rem;
+    line-height: 1.7;
+    font-size: $font-size;
+    color: $Medium-Gray;
+  }
+
+  div.partners {
+    list-style-type: none;
+    margin: 50px 0;
+    padding: 0;
+    text-align: middle;
+    img {
+      margin-right: 2rem;
+
+      .first {
+        width: 20px;
+      }
+    }
+  }
+
+  .more {
+    width: 150px;
+    border: none;
+    border-radius: 13px;
+    padding: 1rem;
+    background-color: $Almost-Black;
+    color: $Almost-White;
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+.attribution {
+  a {
+    text-decoration: none;
+    color: $Almost-Black;
+  }
+  color: $Medium-Gray;
+}
+
+
+@media (min-width: 650px) {
   .join,
   .desktop-image,
   .items ul {

@@ -7,17 +7,28 @@
 body {
   min-height: 100vh;
   font-family: "Epilogue", sans-serif;
+  overflow: hidden;
+  background-color: #fafafa;
 }
 
 nav {
   background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem;
 }
 nav div,
 nav ul {
   display: flex;
+}
+
+#menu-icon {
+  width: 44px;
+  height: 22px;
+}
+
+#menu-icon:hover {
+  cursor: pointer;
 }
 
 .sidebar {
@@ -50,7 +61,69 @@ nav ul {
   display: none;
 }
 
-@media (min-width: 769px) {
+.mobile-image {
+  padding: 1.3rem 0 2.5rem 0;
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main div.topic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main div.topic h5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 100%;
+  color: #141414;
+}
+main div.paragraph {
+  display: flex;
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 0 4rem;
+  line-height: 1.7;
+  font-size: 18px;
+  color: #696969;
+}
+main div.partners {
+  list-style-type: none;
+  margin: 50px 0;
+  padding: 0;
+  text-align: middle;
+}
+main div.partners img {
+  margin-right: 2rem;
+}
+main div.partners img .first {
+  width: 20px;
+}
+main .more {
+  width: 150px;
+  border: none;
+  border-radius: 13px;
+  padding: 1rem;
+  background-color: #141414;
+  color: #fafafa;
+  font-size: large;
+  font-weight: bold;
+}
+
+.attribution {
+  color: #696969;
+}
+.attribution a {
+  text-decoration: none;
+  color: #141414;
+}
+
+@media (min-width: 650px) {
   .join,
   .desktop-image,
   .items ul {
